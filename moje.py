@@ -69,8 +69,8 @@ def calculate_error(network, expected):
 
 
 num_epochs = 10000
-network = initialise_network(2, 3, 1)
-learning_set = [[[1, 1], [1]], [[1, 0], [0]], [[0, 1], [0]], [[0, 0], [0]]]
+network = initialise_network(2, 3, 2)
+learning_set = [[[1, 1], [1, 0]], [[1, 0], [0, 1]], [[0, 1], [0, 1]], [[0, 0], [0, 1]]]
 for epoch in range(num_epochs):
     all_error = 0.0
     for example in learning_set:
